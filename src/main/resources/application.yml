@@ -1,0 +1,34 @@
+server:
+  port: 8081
+
+# log详细配置请查看 logback-spring.xml, springboot可自动加载 resources/logback-spring.xml
+logging:
+  level:
+    root: INFO
+
+#spring:
+#  main:
+#    allow-bean-definition-overriding: true
+
+dubbo:
+  application:
+    name: dubbo-samples-annotation
+
+  # 注册中心配置。对应的配置类： org.apache.dubbo.config.RegistryConfig。同时如果有多个不同的注册中心，
+  # 可以声明多个 <dubbo:registry> 标签，并在 <dubbo:service> 或 <dubbo:reference> 的 registry 属性指定使用的注册中心。
+  registry:
+    address: nacos://139.9.160.51:8848
+    check: false
+
+  # 服务提供者协议配置。对应的配置类： org.apache.dubbo.config.ProtocolConfig。
+  # 同时，如果需要支持多协议，可以声明多个 <dubbo:protocol> 标签，并在 <dubbo:service> 中通过 protocol 属性指定使用的协议。
+  protocol:
+    name: dubbo
+    port: 20880
+  # 服务消费者缺省值配置。配置类： org.apache.dubbo.config.ConsumerConfig 。
+  # 同时该标签为 <dubbo:reference> 标签的缺省值设置
+
+  consumer:
+    timeout: 30000
+    retries: 0
+    check: false

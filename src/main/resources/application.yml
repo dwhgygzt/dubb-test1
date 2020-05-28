@@ -17,7 +17,7 @@ dubbo:
   # 注册中心配置。对应的配置类： org.apache.dubbo.config.RegistryConfig。同时如果有多个不同的注册中心，
   # 可以声明多个 <dubbo:registry> 标签，并在 <dubbo:service> 或 <dubbo:reference> 的 registry 属性指定使用的注册中心。
   registry:
-    address: nacos://139.9.160.51:8848
+    address: nacos://nacos的ip地址:8848
     check: false
 
   # 服务提供者协议配置。对应的配置类： org.apache.dubbo.config.ProtocolConfig。

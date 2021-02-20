@@ -1,8 +1,8 @@
 # dubbo介绍
-优秀的 RPC 服务治理框架，直接查看 [官网]( http://dubbo.apache.org/zh-cn/).
+优秀的 RPC 服务治理框架，直接查看 [官网]( http://dubbo.apache.org/zh/).
 
 # nacos 介绍
-作为 注册中心 和 参数配置中心使用， 本次作为dubbo 服务注册发现中心，介绍查看[官网]( https://nacos.io/zh-cn/docs/what-is-nacos.html).
+作为 注册中心 和 参数配置中心使用， 本次作为dubbo 服务注册发现中心，介绍查看[官网]( https://nacos.io/zh/docs/what-is-nacos.html).
 
 # spring boot 注解方式配置
 本次测试环境
